@@ -21,7 +21,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../components/ui/accordion";
-import { toast } from "sonner";
 import react2 from "../assets/react2.jpg";
 
 const lessonIcon = { video: PlayCircle, reading: FileText, quiz: HelpCircle };
@@ -135,7 +134,7 @@ export default function CourseDetail() {
         completed_lessons: [],
       });
       setEnrolling(false);
-      toast.success("Successfully enrolled!");
+      //   toast.success("Successfully enrolled!");
     }, 800);
   };
 
